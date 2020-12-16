@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="author" content="GRAVITY STUDIO, info@gravity.tj, (+992) 918 24-69-24">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Web Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Roboto:100,300,400,500,700,900&subset=cyrillic" rel="stylesheet">
+
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="Амонатбонк" />
+    <meta name="description" content="Амонатбонк" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css">
+    <style>
+        footer{
+            z-index: 0
+        }
+        #nprogress .bar{
+            height: 5px;
+            background-color: #096833;
+        }
+        #nprogress .spinner-icon {
+            border-top-color: #096833;
+            border-left-color: #096833;
+        }
+        #nprogress .peg{
+            box-shadow: 0px 0px 4px #096833
+        }
+        #proressBg{
+            display: inline-block;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: 20;
+            background-color: rgba(255,255,255,0.9);
+        }
+    </style>
+    <title>Новости</title>
+</head>
+<body>
+    <div id="proressBg"></div>
+    <div class="Wrapper">
+        <header class="position-absolute bg-white">
+            <div class=" container header navbar navbar-expand-lg navbar-light " id="Header">
+                <div class="navbar-brand ">
+                    <a href="#">
+                        <img height="30" src="assets/images/logo.svg" alt="Amonatbonk">
+                    </a>
+                </div>
+                <div class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" id="nav-icon2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="collapse  navbar-collapse" id="navbarText">
+                    <section class="d-lg-block d-none">
+                        <nav class="w-100 ">
+                            <div class="nav nav-tabs d-flex justify-content-start " id="nav-tab" role="tablist">
+                                <a href="#" class="logo"><img height="30" src="assets/images/logo.svg" alt="Amonatbonk"></a>
+                                <a class="pb-2 pt-3 pb-lg-0 nav-link pb-0 active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Частным лицам</a>
+                                <a class="pb-2 pb-lg-0 pt-3 nav-link pb-0" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Юридическим лицам</a>
+                                <a class="pb-2 pt-3 pb-lg-0 nav-link pb-0" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Финансовым организациям</a>
+                                <div class="dropdown pt-3">
+                                    <button class="btn ss py-0 my-0 " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Ещё
+                                        <img src="assets/images/arrow_down_black.svg" id="yetIcon">
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item mb-1" href="about-bank.html">О банке</a>
+                                        <a class="dropdown-item mb-1" href="amonat-online.html">Амонат онлайн</a>
+                                        <a class="dropdown-item mb-1" href="appeal.html">Обращение председателя</a>
+                                        <a class="dropdown-item mb-1" href="history.html">История</a>
+                                        <a class="dropdown-item mb-1" href="news.html">Новости</a>
+                                        <a class="dropdown-item mb-1" href="strukture-bank.html">Структура банка</a>
+                                        <a class="dropdown-item mb-1" href="documents.html">Нормативные документы</a>
+                                    </div>
+                                </div>
+                                <div class="pt-3 px-4 c-p">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                                    </svg>
+                                </div>
+                                <a href="#" class="addreses d-flex pl-3">Офисы и банкоматы</a>
+                                <div class=" d-flex justify-content-end pl-3">
+                                    <div id="lang">
+                                        <div>
+                                            <a href="#" class="active" data-sts="0">
+                                                <span data-id="ru">Рус</span>
+                                            </a>
+                                            <img src="assets/images/arrow_down_black.svg" id="yetIcon">
+                                        </div>
+                                        <div class="lang-overlay">
+                                            <a href="#" data-id="ru">Рус</a>
+                                            <a href="#" data-id="tj">Тоҷ</a>
+                                            <a href="#" data-id="en">Eng</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="input-group  mb-3 shadow-sm d-none border py-2 rounded " id="serchBlock">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text px-3 py-2 text-success" id="serch-icon">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                                                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control p-1" aria-label="Amount (to the nearest dollar)" id="serch-inp" placeholder="Что ищите ?">
+                                    <div class="input-group-append" id="serch-but">
+                                        <a href="" class="input-group-text btn btn-outline-success  px-md-4 px-3 btn-dark text-success">Найти</a>
+                                    </div>
+                                </div>
+                        </nav>
+                        <div class="tab-content w-100" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <div class="row py-3">
+                                    <div class="col-12">
+                                        <ul class="nav nav-pills Desc" id="pills-tab" role="tablist" data-mouse="hover">
+                                            <li class="nav-item mr-2">
+                                                <a class=" " id="pills-credit-tab" data-toggle="pill" href="#pills-credit" role="tab" aria-controls="pills-credit" aria-selected="false">Кредиты</a>
+                                            </li>
+                                            <li class="nav-item mx-2">
+                                                <a class="" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Вклады</a>
+                                            </li>
+                                            <a href="" class="mx-2">Переводы</a>
+                                            <li class="nav-item mx-2">
+                                                <a class="" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Карты</a>
+                                            </li>
+                                            <a href="rco.html" class="mx-2">РКО</a>
+                                            <a href="" class="mx-2">Пенсионерам</a>
+                                            <a href="" class="mx-2">Коммнунальные услуги</a>
+                                            <a href="" class="mx-2">Тарифы</a>
+                                            <a href="">Оферта</a>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tab-content tb">
+                                            <div class="tab-pane navDescCont pt-2 fade " id="pills-credit" role="tabpanel" aria-labelledby="pills-credit-tab">
+                                                <div class="row navBotWrapp">
+                                                    <div class="col-lg-2 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-deposits.html" class="mt-3">Потребительский кредит</a>
+                                                        <a href="detiled-deposits.html" class="mt-3">Овердрафт</a>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-deposits.html" class="mt-3">Кредиты для проведения таможенных процедур</a>
+                                                        <a href="" class="mt-3">Кредиты для для развития малого и средного бизнеса</a>
+                                                    </div>
+                                                    <div class="col-lg-3 mt-0 mt-md-4 mt-lg-0 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-deposits.html" class="mt-3 W75">Кредиты на развитие промышленности и строительства</a>
+                                                    </div>
+                                                    <div class="col-lg-5 mt-0 mt-md-4 mt-lg-0 col-md-6 d-flex flex-column text-center">
+                                                        <div><img src="assets/images/header-img-3.png" alt=""></div>
+                                                        <h5 class="mt-3">Кредиты</h5>
+                                                        <div><a href="deposits.html" class="ButtonBaner rounded m-auto px-4 c-p">Подробнее</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane navDescCont pt-2 fade " id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                                <div class="row navBotWrapp">
+                                                    <div class="col-lg-2 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-deposits.html" class="mt-3">Срочный вклад</a>
+                                                        <a href="detiled-deposits.html" class="mt-3">Вклад Детский</a>
+                                                        <a href="detiled-deposits.html" class="mt-3">Вклад Имконият</a>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-deposits.html" class="mt-3">Вклад Пенсионный</a>
+                                                        <a href="detiled-deposits.html" class="mt-3">Вклад Зарубежный соотечественник</a>
+                                                        <a href="" class="mt-3">Срочный Накопительный Вклад</a>
+                                                    </div>
+                                                    <div class="col-lg-3 mt-0 mt-md-4 mt-lg-0 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-deposits.html" class="mt-3 W75">Срочный Вклад с дополнительным взносом</a>
+                                                    </div>
+                                                    <div class="col-lg-5 mt-0 mt-md-4 mt-lg-0 col-md-6 d-flex flex-column text-center">
+                                                        <div><img src="assets/images/header-img-1.png" alt=""></div>
+                                                        <h5 class="mt-3">Вклады</h5>
+                                                        <div><a href="deposits.html" class="ButtonBaner rounded m-auto c-p px-4">Подробнее</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane navDescCont pt-2 fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                                <div class="row navBotWrapp">
+                                                    <div class="col-lg-2 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-cards.html" class="mt-3">Корти Милли</a>
+                                                        <a href="detiled-cards.html" class="mt-3">Нафакави</a>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-cards.html" class="mt-3">Visa Electron</a>
+                                                        <a href="detiled-cards.html" class="mt-3">Visa Classic</a>
+                                                    </div>
+                                                    <div class="col-lg-3 mt-0 mt-md-4 mt-lg-0 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-cards.html" class="mt-3 W75">Visa Gold</a>
+                                                    </div>
+                                                    <div class="col-lg-5 mt-0 mt-md-4 mt-lg-0 col-md-6 d-flex flex-column text-center">
+                                                        <div><img src="assets/images/header-img-2.png" alt=""></div>
+                                                        <h5 class="mt-3">Корт</h5>
+                                                        <div><a href="cards.html" class="ButtonBaner rounded m-auto c-p px-4">Подробнее</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="row py-3">
+                                    <div class="col-12">
+                                        <ul class="nav nav-pills Desc" id="pills-tab" role="tablist" data-mouse="hover">
+                                            <a href="credits.html" class="mr-2">Кредиты</a>
+                                            <li class="nav-item mx-2">
+                                                <a class="" id="pills-profiles-tab" data-toggle="pill" href="#pills-profiles" role="tab" aria-controls="pills-profiles" aria-selected="false">Вклады</a>
+                                            </li>
+                                            <a href="" class="mx-2">Переводы</a>
+                                            <li class="nav-item mx-2">
+                                                <a class="" id="pills-contacts-tab" data-toggle="pill" href="#pills-contacts" role="tab" aria-controls="pills-contacts" aria-selected="false">Карты</a>
+                                            </li>
+                                            <a href="rco.html" class="mx-2">РКО</a>
+                                            <a href="" class="mx-2">Пенсионерам</a>
+                                            <a href="" class="mx-2">Коммнунальные услуги</a>
+                                            <a href="" class="mx-2">Тарифы</a>
+                                            <a href="">Оферта</a>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tab-content">
+                                            <div class="tab-pane navDescCont pt-2 fade " id="pills-profiles" role="tabpanel" aria-labelledby="pills-profiles-tab">
+                                                <div class="row navBotWrapp">
+                                                    <div class="col-lg-2 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-deposits.html" class="mt-3">Срочный вклад</a>
+                                                        <a href="detiled-deposits.html" class="mt-3">Вклад Детский</a>
+                                                        <a href="detiled-deposits.html" class="mt-3">Вклад Имконият</a>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-deposits.html" class="mt-3">Вклад Пенсионный</a>
+                                                        <a href="detiled-deposits.html" class="mt-3">Вклад Зарубежный соотечественник</a>
+                                                        <a href="" class="mt-3">Срочный Накопительный Вклад</a>
+                                                    </div>
+                                                    <div class="col-lg-3 mt-0 mt-md-4 mt-lg-0 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-deposits.html" class="mt-3 W75">Срочный Вклад с дополнительным взносом</a>
+                                                    </div>
+                                                    <div class="col-lg-5 mt-0 mt-md-4 mt-lg-0 col-md-6 d-flex flex-column text-center">
+                                                        <div><img src="assets/images/header-img-1.png" alt=""></div>
+                                                        <h5 class="mt-3">Вклады</h5>
+                                                        <div><a href="deposits.html" class="ButtonBaner rounded m-auto c-p">Подробнее</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane navDescCont pt-2 fade" id="pills-contacts" role="tabpanel" aria-labelledby="pills-contacts-tab">
+                                                <div class="row navBotWrapp">
+                                                    <div class="col-lg-2 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-cards.html" class="mt-3">Корти Милли</a>
+                                                        <a href="detiled-cards.html" class="mt-3">Нафакави</a>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-cards.html" class="mt-3">Visa Electron</a>
+                                                        <a href="detiled-cards.html" class="mt-3">Visa Classic</a>
+                                                    </div>
+                                                    <div class="col-lg-3 mt-0 mt-md-4 mt-lg-0 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-cards.html" class="mt-3 W75">Visa Gold</a>
+                                                    </div>
+                                                    <div class="col-lg-5 mt-0 mt-md-4 mt-lg-0 col-md-6 d-flex flex-column text-center">
+                                                        <div><img src="assets/images/header-img-2.png" alt=""></div>
+                                                        <h5 class="mt-3">Корт</h5>
+                                                        <div><a href="cards.html" class="ButtonBaner rounded m-auto c-p">Подробнее</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row py-3">
+                                    <div class="col-12">
+                                        <ul class="nav nav-pills Desc" id="pills-tab" role="tablist" data-mouse="hover">
+                                            <a href="credits.html" class="mr-2">Кредиты</a>
+                                            <li class="nav-item mx-2">
+                                                <a class="" id="pills-profilea-tab" data-toggle="pill" href="#pills-profilea" role="tab" aria-controls="pills-profilea" aria-selected="false">Вклады</a>
+                                            </li>
+                                            <a href="" class="mx-2">Переводы</a>
+                                            <li class="nav-item mx-2">
+                                                <a class="" id="pills-contacta-tab" data-toggle="pill" href="#pills-contacta" role="tab" aria-controls="pills-contacta" aria-selected="false">Карты</a>
+                                            </li>
+                                            <a href="rco.html" class="mx-2">РКО</a>
+                                            <a href="" class="mx-2">Пенсионерам</a>
+                                            <a href="" class="mx-2">Коммнунальные услуги</a>
+                                            <a href="" class="mx-2">Тарифы</a>
+                                            <a href="">Оферта</a>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="tab-content">
+                                            <div class="tab-pane navDescCont pt-2 fade " id="pills-profilea" role="tabpanel" aria-labelledby="pills-profilea-tab">
+                                                <div class="row navBotWrapp">
+                                                    <div class="col-lg-2 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-deposits.html" class="mt-3">Срочный вклад</a>
+                                                        <a href="detiled-deposits.html" class="mt-3">Вклад Детский</a>
+                                                        <a href="detiled-deposits.html" class="mt-3">Вклад Имконият</a>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-deposits.html" class="mt-3">Вклад Пенсионный</a>
+                                                        <a href="detiled-deposits.html" class="mt-3">Вклад Зарубежный соотечественник</a>
+                                                        <a href="" class="mt-3">Срочный Накопительный Вклад</a>
+                                                    </div>
+                                                    <div class="col-lg-3 mt-0 mt-md-4 mt-lg-0 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-deposits.html" class="mt-3 W75">Срочный Вклад с дополнительным взносом</a>
+                                                    </div>
+                                                    <div class="col-lg-5 mt-0 mt-md-4 mt-lg-0 col-md-6 d-flex flex-column text-center">
+                                                        <div><img src="assets/images/header-img-1.png" alt=""></div>
+                                                        <h5 class="mt-3">Вклады</h5>
+                                                        <div><a href="deposits.html" class="ButtonBaner rounded m-auto c-p">Подробнее</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane navDescCont pt-2 fade" id="pills-contacta" role="tabpanel" aria-labelledby="pills-contacta-tab">
+                                                <div class="row navBotWrapp">
+                                                    <div class="col-lg-2 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-cards.html" class="mt-3">Корти Милли</a>
+                                                        <a href="detiled-cards.html" class="mt-3">Нафакави</a>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-cards.html" class="mt-3">Visa Electron</a>
+                                                        <a href="detiled-cards.html" class="mt-3">Visa Classic</a>
+                                                    </div>
+                                                    <div class="col-lg-3 mt-0 mt-md-4 mt-lg-0 col-md-6 d-flex flex-column">
+                                                        <a href="detiled-cards.html" class="mt-3 W75">Visa Gold</a>
+                                                    </div>
+                                                    <div class="col-lg-5 mt-0 mt-md-4 mt-lg-0 col-md-6 d-flex flex-column text-center">
+                                                        <div><img src="assets/images/header-img-2.png" alt=""></div>
+                                                        <h5 class="mt-3">Корт</h5>
+                                                        <div><a href="cards.html" class="ButtonBaner rounded m-auto c-p">Подробнее</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--mobile and ipade version header-->
+                    <section class="hh pb-5">
+                        <div class="input-group mt-4 mb-4 border py-2 rounded">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text px-3 py-2 text-success" id="serch-icon">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+                                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="serch-inp" placeholder="Что ищите?">
+                            <div class="input-group-append" id="serch-but">
+                                <a href="" class="input-group-text btn px-2 pr-4 btn-dark text-success">Найти</a>
+                            </div>
+                        </div>
+                        <div class="row pl-3">
+                            <div class="col-md-4 col-12 pt-4 bg-light border">
+                                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Частным лицам</a>
+                                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Юридическим лицам</a>
+                                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Финансовым организациям</a>
+                                    <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">о банке</a>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-12 mt-4 mt-md-0 px-0 px-md-4">
+                                <div class="tab-content p-4 bg-light border" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                        <div class="right-nav">
+                                            <span href="" class="h5 c-p right-nav-span d-flex align-items-center">Вклад <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-chevron-down ml-2 iconMenu" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                </svg></span>
+                                            <div class="right-nav-block">
+                                                <ul class="text-12 list-unstyled pl-4">
+                                                    <li><a href="detiled-deposits.html">Срочный вклад</a></li>
+                                                    <li><a href="detiled-deposits.html">Вклад Детский</a></li>
+                                                    <li><a href="detiled-deposits.html">Вклад Имконият</a></li>
+                                                    <li><a href="detiled-deposits.html">Вклад Пенсионный</a></li>
+                                                    <li><a href="detiled-deposits.html">Вклад Зарубежный соотечественник</a></li>
+                                                    <li><a href="detiled-deposits.html">Срочный Накопительный Вклад</a></li>
+                                                    <li><a href="deposits.html">Все вклады</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="credits.html">Кредиты</a>
+                                        <a href="">Переводы</a>
+                                        <div class="right-nav">
+                                            <span href="" class="h5 c-p right-nav-span d-flex align-items-center">Карты <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-chevron-down ml-2 iconMenu" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                </svg></span>
+                                            <div class="right-nav-block">
+                                                <ul class="text-12 list-unstyled pl-4">
+                                                    <li><a href="detiled-cards.html">Корти Милли</a></li>
+                                                    <li><a href="detiled-cards.html">Нафакави</a></li>
+                                                    <li><a href="detiled-cards.html">Visa Electron</a></li>
+                                                    <li><a href="detiled-cards.html">Visa Classic</a></li>
+                                                    <li><a href="detiled-cards.html">Visa Gold</a></li>
+                                                    <li><a href="cards.html">Все карты</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="rco.html">РКО</a>
+                                        <a href="">Коммунальные услуги</a>
+                                        <a href="">Тарифы</a>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                        <div class="right-nav">
+                                            <span href="" class="h5 c-p right-nav-span d-flex align-items-center">Вклады <svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-chevron-down ml-2 iconMenu" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                </svg></span>
+                                            <div class="right-nav-block">
+                                                <ul class="text-12 list-unstyled pl-4">
+                                                    <li><a href="detiled-deposits.html">Срочный вклад</a></li>
+                                                    <li><a href="detiled-deposits.html">Вклад Детский</a></li>
+                                                    <li><a href="detiled-deposits.html">Вклад Имконият</a></li>
+                                                    <li><a href="detiled-deposits.html">Вклад Пенсионный</a></li>
+                                                    <li><a href="detiled-deposits.html">Вклад Зарубежный соотечественник</a></li>
+                                                    <li><a href="detiled-deposits.html">Срочный Накопительный Вклад</a></li>
+                                                    <li><a href="detiled-deposits.html">Срочный Вклад с дополнительным взносом</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="credits.html">кредиты</a>
+                                        <a href="">Денежные переводы</a>
+                                        <div class="right-nav">
+                                            <span href="" class="h5 c-p right-nav-span d-flex align-items-center">Карты<svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-chevron-down ml-2 iconMenu" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                </svg></span>
+                                            <div class="right-nav-block">
+                                                <ul class="text-12 list-unstyled pl-4">
+                                                    <li><a href="detiled-cards.html">Корти Милли</a></li>
+                                                    <li><a href="detiled-cards.html">Нафакави</a></li>
+                                                    <li><a href="detiled-cards.html">Visa Electron</a></li>
+                                                    <li><a href="detiled-cards.html">Visa Classic</a></li>
+                                                    <li><a href="detiled-cards.html">Visa Gold</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <a href="rco.html">Расчётно-кассовое обслуживание</a>
+                                        <a href="">Коммунальные услуги</a>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                        <a href="deposits">Вклады</a>
+                                        <a href="">Банковские карты</a>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                        <a href="appeal.html">Обращение председателя</a>
+                                        <a href="history.html">История</a>
+                                        <a href="strukture-bank.html">Структура банка</a>
+                                        <a href="documents.html">Нормативные документы</a>
+                                        <a href="contacts.html">Контакты</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </header>
+        <div class="topClear" style="height: 115px; display: inline-block;">  
+        </div>
+     </div>   
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <div class="bottom_menu">
+                        <a href="#">Физическим лицам</a>
+                        <a href="#">Юридическим лицам</a>
+                        <a href="#">Финансовым организациям</a>
+                        <a href="#">Международное сотрудничество</a>
+                        <a href="#">Кредиты</a>
+                        <a href="#">Вклады</a>
+                        <a href="#">Переводы</a>
+                        <a href="#">Карты</a>
+                        <a href="#">Офисы и банкоматы</a>
+                        <a href="#">Тарифы</a>
+                        <a href="#">Контакты</a>
+                        <a href="#">Вакансии</a>
+                        <a href="#">Пресс-центр</a>
+                        <a href="#">Интернет-банкинг</a>
+                        <a href="#">Пользовательское соглашение</a>
+                        <a href="#">Нормативные документы</a>
+                    </div>
+                    <div class="address">
+                        734013, Республика Таджикистан, г. Душанбе, проспект Рудаки 105
+                        <br>
+                        к/сч: 20402972316264, МФО: 350101626, ИНН: 010002120
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="row">
+                        <div class="foo_search col-lg-10 col-12">  
+                            <div class="input-group mb-3 form-control p-0">
+                                <input type="text" class="text-white h-100 form-control" placeholder="Поиск ..">
+                                <div class=" pr-1"> 
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.9996 13.9996L11.0996 11.0996" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="phone_no"> 
+                        <span>1885</span>
+                        <p>Для звонков с мобильных в Таджикистане</p>
+                        <span>+992 (44) 600-00-34</span>
+                        <p>Для звонков из любой точки мира</p>
+                    </div>
+                    <div class="foo_mob_app">
+                        <a href="#"><img src="assets/images/foo_ios_icon.svg" alt="ios"></a>
+                        <a href="#"><img src="assets/images/foo_android_icon.svg" alt="android"></a>
+                    </div>
+                    <div class="foo_social">
+                        <a href="#"><img src="assets/images/icon_fb.svg" alt="Facebook"></a>
+                        <a href="#"><img src="assets/images/icon_ins.svg" alt="Instagram"></a>
+                        <a href="#"><img src="assets/images/icon_tg.svg" alt="Telegram"></a>
+                        <a href="#"><img src="assets/images/icon_you.svg" alt="Youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 copyrights">© 2020 ГСБ РТ «Амонатбанк»</div>
+                    <div class="col-md-6 col-sm-6 developers">
+                        Разработано в <a href="https://gravity.studio" target="_blank">Gravity Studio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    new WOW().init();
+    const proressBg = document.getElementById("proressBg")
+
+    NProgress.start();
+    window.addEventListener('DOMContentLoaded',()=>{
+
+        setTimeout(()=>{
+            NProgress.done()
+            proressBg.style.display = "none"
+        }, 1000)
+        
+    })
+</script>
+
+        <script>
+            
+        </script>
+
+</body>
+</html>
