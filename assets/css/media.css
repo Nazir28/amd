@@ -1,0 +1,572 @@
+/* Extra large devices (large desktops, 1200px and up) */
+@media screen and (max-width: 1200px){
+    #products .big img {
+        height: 200px;
+    }
+    #products .bankProduct h2{
+        font-size: 22px;
+    }
+    #currency table th,
+    #currency table td{
+        font-size: 12px;
+    }
+    #useful_links a {
+        min-height: 82px;
+    }
+    .topClear{
+        height: 165px !important
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (max-width: 992px) {
+    #slideshow .text {
+        width: 300px;
+    }
+    #slideshow .mySlides>img{
+        height: 70%;
+        padding: 20px 20px 0 0;
+    }
+    #slideshow .mySlides h1{
+        line-height: 40px;
+        font-size: 35px;
+    }
+    #slideshow .mySlides p{
+        line-height: 16px;
+        font-size: 12px;
+    }
+    #slideshow .mySlides a{
+        line-height: 18px;
+        font-size: 12px;
+    }
+    #products .big {
+        padding: 30px;
+    }
+    #products .big img {
+        height: auto;
+        width: 100%;
+    }
+    #currency table th,
+    #currency table td{
+        font-size: 14px;
+    }
+    #amonat-mobile .mobile-screen {
+        right: -50px;
+        width: 450px;
+    }
+    #tajikistan .t_img {
+        width: 100%;
+        height: auto;
+    }
+    #tajikistan .t_link {
+        font-size: 12px;
+        line-height: 16px;
+        width: 100%;
+    }
+    footer .foo_mob_app a {
+        margin: 0 10px 10px 0;
+        display: block;
+    }
+    #cards .myCardSlides h1 {
+        line-height: 26px;
+        font-size: 24px;
+    }
+    #cards .myCardSlides p {
+         line-height: 22px;
+         font-size: 14px;
+     }
+    #cards .myCardSlides a.card_order {
+        padding: 8px 12px;
+        line-height: 18px;
+        font-size: 14px;
+    }
+    /* media nazir style*/
+    .header .navbar-brand{
+        display: block;
+    }
+    .header .logo{
+        display: none;
+    }
+    .mainmenu{
+        background: #fafafa;
+        color:white!important;
+        box-shadow: 0px 0px 5px #ccc;
+    }
+    .hh{
+        display: block;
+    }
+    .hh .row .nav-link{
+        padding: 5px
+    }
+    .topClear{
+        height: 55px !important
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 768px){
+    #slideshow{
+        height: 300px;
+    }
+    #slideshow .slideshow-container {
+        min-height: 300px;
+    }
+    #slideshow .text {
+        width: 100%;
+        top: 65px;
+    }
+    #slideshow .mySlides>img{
+        display: none;
+    }
+    #slideshow .mySlides h1{
+        line-height: 28px;
+        font-size: 26px;
+        text-align: center;
+    }
+    #slideshow .mySlides p{
+        line-height: 14px;
+        font-size: 12px;
+        text-align: center;
+    }
+    #slideshow .mySlides>div>a{
+        line-height: 12px;
+        font-size: 10px;
+        margin: 0 auto;
+    }
+    #products .bankProduct {
+        min-height: 500px;
+        margin-bottom: 20px;
+    }
+    #news .event_title {
+        min-height: inherit;
+    }
+    #news .event_date {
+        display: block;
+        margin-bottom: 25px;
+    }
+    #amonat-mobile .mobile-screen {
+        display: none;
+    }
+    #amonat-mobile .am-block p {
+        width: 100%;
+    }
+    #tajikistan .t_img {
+        width: 50%;
+        height: auto;
+    }
+    #tajikistan .t_link {
+        font-size: 14px;
+        line-height: 18px;
+        width: 100%;
+        margin-bottom: 40px;
+        padding: 0 10px;
+    }
+    footer .address {
+        margin-bottom: 20px;
+    }
+    footer .foo_mob_app a {
+        margin: 0 10px 0 0;
+        display: inline-block;
+    }
+    #cards .myCardSlides {
+        padding: 40px 0;
+    }
+
+    /*NazirMedia*/
+
+    #newsPage #NewsIamge a>img{
+        width: 100%;
+    }
+
+    #history #historyText h2{
+        text-align: center;
+    }
+
+    .W75{
+        width: 100%
+    }
+
+    #Credits h3{
+        text-align: center
+    }
+    .W50{
+        width: 100%;
+    }
+    #map .nav-tabs{
+        border-bottom: 0px solid transparent;
+    }
+    #Contacts .nav-tabs .nav-link{
+        font-size:  14px;
+    }
+    #Contacts .contacts-table tbody td{
+        width: 300px !important
+    }
+    .creditsBaner {
+        background: #f5f5f5;
+        height: auto!important;
+        overflow-x: hidden;
+    }
+    .or-1{
+        order: 2
+    }
+    .or-2{
+        order: 1
+    }
+
+    .detiledCardsBaner{
+        height: 300px !important;
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #products .bankProduct {
+        min-height: 160px;
+    }
+    #products img, #products .big img {
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 576px){
+    #slideshow {
+        height: auto;
+        overflow: hidden;
+        padding-bottom: 30px;
+    }
+    .block_title{
+        margin-top: 15px;
+        font-size: 22px;
+    }
+    #products .bankProduct h2 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+    #products .big {
+        padding: 20px;
+        min-height: 120px;
+    }
+    #products .colored{
+        min-height: 120px;
+    }
+    #products .simple a {
+        font-size: 12px;
+    }
+    #amonat-mobile .am-block {
+        padding: 30px;
+    }
+    #amonat-mobile .am-block h1 {
+        margin-bottom: 15px;
+        font-size: 26px;
+    }
+    #amonat-mobile .am-block p {
+        margin: 0 0 20px 0;
+    }
+    #useful_links a {
+        margin: 0 0 15px 0;
+    }
+    #useful_links span {
+        margin-top: 15px;
+    }
+    footer .footer_bottom .copyrights{
+        text-align: left;
+    }
+    footer .footer_bottom .developers{
+        margin-top: 10px;
+        text-align: left;
+    }
+    #amonat-mobile{
+        margin-bottom: 20px;
+    }
+    #cards .myCardSlides {
+        padding: 20px 0;
+    }
+    #cards .myCardSlides h1 {
+        line-height: 20px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    #cards .myCardSlides a.all_cards {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    #cards .prev, #cards .next {
+        bottom: 20px;
+    }
+    #cards .next {
+        right: 0;
+    }
+    #cards .prev {
+        right: 50px;
+    }
+
+
+    /*nazir*/
+
+    #aboutBank #aboutBankText p {
+        font-size: 14px;
+        line-height: 18px;
+        text-align: justify;
+    }
+    #headerText {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 20px;
+    }
+
+    .creditsBaner h1 {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 29px;
+    }
+    #creditsDetayled h1 {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 20px;
+    }
+    .amonat-online{
+        overflow-x: hidden;
+    }
+    .amonat-online #creditsDetayled .advantages small {
+        font-size: 14px;
+    }
+    .amonat-online #footBaner h1{
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 29px;
+    }
+
+    #appleal h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    #appleal h5 {
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 400;
+        text-align: justify;
+    }
+    #appleal p {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        text-align: justify;
+    }
+    #appleal h5 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        text-align: justify;
+    }
+
+    #Credits h3 {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 28px;
+    }
+    #FooterBaner .nav-tabs .nav-link {
+        border: 1px solid transparent;
+        border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    #Contacts h1 {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    #FooterBaner h4 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    #FooterBaner ul {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .ButtonBaner {
+        padding: 8px 40px;
+    }
+    #detiledCards #aboutCredits h1 {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    #detiledCards #aboutCredits p {
+        font-size: 15px;
+        line-height: 24px;
+        padding-bottom: 20px 
+    }
+    .detiledCardsBaner h1{
+        font-size: 30px
+    }
+    #advantageCard>h1{
+        font-size: 30px
+    }
+    #possibility h1{
+        font-size: 30px! important
+    }
+    #formCredit h1 {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 30px;
+        color: white;
+    }
+    #formCredit h2 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    #questions h1 {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    #questions span {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 20px;
+    }
+    #creditsDetayled .advantages h3 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 14px;
+    }
+    #creditsDetayled .advantages small {
+        line-height: 20px;
+    }
+    #creditsDetayled h2 {
+        font-size: 26px;
+        line-height: 20px;
+    }
+    #creditsDetayled .calculator small {
+        font-size: 14px;
+    }
+    #creditsDetayled .calculator p {
+        font-size: 18px;
+    }
+    #creditsDetayled h5 {
+        font-size: 30px;
+    }
+    #creditsDetayled span {
+        font-size: 16px;
+    }
+    .dep-calculator h5 {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 24px;
+    }
+    .dep-calculator .calcText {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    #aboutCredits h2 {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    #receiveCredit h1 {
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    #headerText {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 30px;
+    }
+    #newsDetileds #detiledNewsText p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    #newsDetileds #detileNextNews p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+    #newsDetileds #detileBackNews p {
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+    #newsDetileds #detileBackNews, #newsDetileds #detileNextNews {
+        width: auto;
+    }
+    .documents-nav .nav-tabs a {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    #history #historyText h2 {
+        font-size: 60px;
+        line-height: 71px;
+    }
+    #history #historyText p {
+        line-height: 22px;
+    }
+    #map h1{
+        font-size: 30px
+    }
+    #newsPage #NewsBodyText{
+        line-height: 26px
+    }
+    #newsPage #HederNewsHead{
+        line-height: 28px
+    }
+    .RCO h1 {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 38px;
+    }
+    .RCO h2 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .RCO p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    #strukture-bank h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    #strukture-bank #nav-strc h4 {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    #strukture-bank #nav-strc p{
+        margin-bottom:  0px;
+        font-size:  14px;
+    }
+
+    #slideshow .mySlides h3{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    #slideshow .mySlides span{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .transfer p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+
+    .CartSite h1{
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
